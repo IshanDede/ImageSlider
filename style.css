@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+body p {
+  font-size: 20px;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.left-slide {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  transition: transform 0.5s ease-in-out;
+}
+
+.left-slide > div {
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-slide h1 {
+  margin-bottom: 10px;
+}
+
+.right-slide {
+  top: 0;
+  left: 40%;
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  transition: transform 0.5s ease-in-out;
+}
+
+.right-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.811);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  position: absolute;
+  left: 37.5%;
+  top: 48%;
+  padding: 0.5%;
+  z-index: 100;
+  border: none;
+  border-radius: 0%;
+  opacity: 0.8;
+}
+
+button:hover {
+  background-color: rgba(34, 34, 33, 0.623);
+  color: white;
+  cursor: pointer;
+}
